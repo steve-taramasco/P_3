@@ -1,0 +1,15 @@
+/* header */
+.header {
+    background-color: $primary-colour;
+    margin-bottom: 2.5em;
+
+    &__title {
+        font-family: $title-font;
+        letter-spacing: -4px;
+        font-size: 5em;
+        padding: .5em;
+        margin: 0;
+        text-align: center;
+        color: $secondary-colour;
+    }
+}

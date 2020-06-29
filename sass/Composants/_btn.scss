@@ -1,0 +1,29 @@
+/* bouton */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        @media screen and (max-width: 1190px) {
+            padding: .5em;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: .5em;
+        }
+
+        @media screen and (max-width: 380px) {
+            padding: .5em;
+        }
+
+        font-family: $title-font;
+        background-color: $primary-colour;
+        color: $secondary-colour;
+        font-size: 3.5em;
+        font-weight: normal;
+        border-radius: .4em;
+        padding: .3em 1.3em;
+    }
+}

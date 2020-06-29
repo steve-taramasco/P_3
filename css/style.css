@@ -1,0 +1,175 @@
+/* variables */
+/* mixins */
+body {
+  margin: auto;
+}
+@media screen and (max-width: 1190px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 380px) {
+  body {
+    font-size: 0.5em;
+  }
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+/* header */
+.header {
+  background-color: #579C87;
+  margin-bottom: 2.5em;
+}
+.header__title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -4px;
+  font-size: 5em;
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+  color: #FDCB46;
+}
+
+/* menu-group */
+.menu-group {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1190px) {
+  .menu-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu-group > div {
+  width: 32em;
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
+}
+.menu-group h2 {
+  font-size: 3em;
+  font-weight: normal;
+  margin-top: 0em;
+}
+.menu-group h3 {
+  font-size: 4em;
+  margin: 0;
+  font-weight: normal;
+}
+
+.menu-1 {
+  background-color: #FCDFDB;
+  color: #3C1218;
+}
+.menu-1 i {
+  font-size: 5em;
+}
+.menu-1 h2 {
+  font-family: "Devonshire", cursive;
+}
+.menu-1 h3 {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+}
+
+.menu-2 {
+  background-color: #FFF5FE;
+  color: #C77412;
+}
+.menu-2 h2 {
+  font-family: "Croissant One", cursive;
+  font-size: 2em;
+}
+.menu-2 h3 {
+  font-weight: 600;
+}
+
+.menu-3 {
+  color: #0887FB;
+  background-color: #F9F9F9;
+}
+.menu-3 h2 {
+  font-family: "Dancing Script", cursive;
+}
+.menu-3 h3 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.menu-4 {
+  color: #72BF56;
+  background-color: #FDFFFD;
+}
+.menu-4 h2 {
+  font-family: "Kaushan Script", cursive;
+}
+.menu-4 h3 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* bouton */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__title {
+  font-family: "Montserrat", sans-serif;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-size: 3.5em;
+  font-weight: normal;
+  border-radius: 0.4em;
+  padding: 0.3em 1.3em;
+}
+@media screen and (max-width: 1190px) {
+  .btn__title {
+    padding: 0.5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btn__title {
+    padding: 0.5em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .btn__title {
+    padding: 0.5em;
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #579C87;
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__legal, .footer__contact {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  color: #FDCB46;
+  padding: 0.5em 1em;
+  margin: 0em;
+}
+
+/*# sourceMappingURL=style.css.map */

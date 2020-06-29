@@ -1,0 +1,16 @@
+/* variables */
+
+$primary-colour: #579C87;
+$secondary-colour: #FDCB46;
+
+$title-font: 'Montserrat', sans-serif;
+
+/* mixins */
+
+@mixin link-styles {
+
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
