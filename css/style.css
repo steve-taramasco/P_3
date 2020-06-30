@@ -64,6 +64,7 @@ a {
 .menu-group h2 {
   font-size: 3em;
   font-weight: normal;
+  padding: 0.1em;
   margin-top: 0em;
 }
 .menu-group h3 {
@@ -78,6 +79,9 @@ a {
 }
 .menu-1 i {
   font-size: 5em;
+  background: linear-gradient(0.33turn, #ff3366, #f78f6a 80%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu-1 h2 {
   font-family: "Devonshire", cursive;
@@ -93,6 +97,9 @@ a {
 }
 .menu-2 h2 {
   font-family: "Croissant One", cursive;
+  background: linear-gradient(0.4turn, #D8852E 25%, #905BFD);
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 2em;
 }
 .menu-2 h3 {
@@ -105,6 +112,9 @@ a {
 }
 .menu-3 h2 {
   font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right bottom, #0431df, #0887fb 80%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu-3 h3 {
   font-family: "Shadows Into Light", cursive;
@@ -116,6 +126,9 @@ a {
 }
 .menu-4 h2 {
   font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to right bottom, #3d9339, #bfff7e 70%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .menu-4 h3 {
   font-family: "Shadows Into Light", cursive;

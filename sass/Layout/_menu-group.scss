@@ -22,6 +22,7 @@
     & h2 {
         font-size: 3em;
         font-weight: normal;
+        padding: 0.1em;
         margin-top: 0em;
     }
 
@@ -38,6 +39,9 @@
 
     & i {
         font-size: 5em;
+        background: linear-gradient(0.33turn,#ff3366, #f78f6a 80%);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     & h2 {
@@ -56,6 +60,9 @@
 
     & h2 {
         font-family: 'Croissant One', cursive;
+        background: linear-gradient(0.4turn, #D8852E 25%, #905BFD);
+        -webkit-background-clip: text;
+        color: transparent;
         font-size: 2em;
     }
 
@@ -70,6 +77,9 @@
 
     & h2 {
         font-family: 'Dancing Script', cursive;
+        background: linear-gradient(to right bottom, #0431df, #0887fb 80%);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     & h3 {
@@ -83,6 +93,9 @@
 
     & h2 {
         font-family: 'Kaushan Script', cursive;
+        background: linear-gradient(to right bottom, #3d9339, #bfff7e 70%);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     & h3 {
