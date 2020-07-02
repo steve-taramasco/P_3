@@ -2,15 +2,32 @@
 
 $primary-colour: #579C87;
 $secondary-colour: #FDCB46;
-
 $title-font: 'Montserrat', sans-serif;
 
-/* mixins */
+/* menu 1 */
 
-@mixin link-styles {
+$background_1: #FCDFDB;
+$colour_1: #3C1218;
+$font_1-h2: 'Devonshire', cursive;
+$font_1-h3: 'Kalam', cursive;
 
-    text-decoration: none;
-    text-align: center;
-    color: inherit;
-}
+/* menu 2 */
+
+$background_2: #FFF5FE;
+$colour_2: #C77412;
+$font_2-h2: 'Croissant One', cursive;
+
+/* menu 3 */
+
+$background_3: #F9F9F9;
+$colour_3: #0887FB;
+$font_3-h2: 'Dancing Script', cursive;
+$font_3-h3: 'Shadows Into Light', cursive;
+
+/* menu 4 */
+
+$background_4: #FDFFFD;
+$colour_4: #72BF56;
+$font_4-h2: 'Kaushan Script', cursive;
+$font_4-h3: 'Shadows Into Light', cursive;
 

@@ -1,0 +1,20 @@
+/* mixins */
+
+@mixin link-styles {
+
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
+@mixin menu-prev {
+
+    width: 32em;
+    height: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em;
+    box-shadow: 0px 0px 20px #BDBDBD;
+}

@@ -1,0 +1,83 @@
+/* menu 1 */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto 8em auto;
+}
+
+.title {
+    text-align: center;
+    font-family: $title-font;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.menu-1 {
+    background: $background_1;
+    box-shadow: 0px 0px 20px #BDBDBD;
+    padding: 5em;
+
+    &__header {
+        text-align: center;
+        font-size: 2.8em;
+        padding: 1em;
+        font-family: $font_1-h2;
+
+        & h2 {
+            font-weight: normal;
+            margin: 0;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Kalam', cursive;
+        & h2 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 2.5em;
+        }
+    }
+
+    &__content {
+
+        font-family: 'Kalam', cursive;
+        padding-bottom: 2em;
+
+        & ul {
+            list-style-type: none;
+            font-weight: lighter;
+            font-size: 1.5em;
+            line-height: 2.5;
+            padding: 0;
+            margin: 0;
+            & li {
+                display: flex;
+                justify-content: space-between;
+            }
+            & span {
+                font-weight: normal;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.2em;
+        font-weight: normal;
+        font-family: "Devonshire", cursive;
+        &__note {
+            width: 50px;
+            height: auto;
+            padding-right: 0.5em;
+        }
+    }
+
+}

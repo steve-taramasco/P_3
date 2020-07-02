@@ -1,4 +1,8 @@
 /* variables */
+/* menu 1 */
+/* menu 2 */
+/* menu 3 */
+/* menu 4 */
 /* mixins */
 body {
   margin: auto;
@@ -30,7 +34,7 @@ a {
   background-color: #579C87;
   margin-bottom: 2.5em;
 }
-.header__title {
+.header__logo {
   font-family: "Montserrat", sans-serif;
   letter-spacing: -4px;
   font-size: 5em;
@@ -41,17 +45,28 @@ a {
 }
 
 /* menu-group */
-.menu-group {
+.block {
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 1190px) {
-  .menu-group {
+  .block {
     flex-direction: column;
     align-items: center;
   }
 }
-.menu-group > div {
+.block h2 {
+  font-size: 3em;
+  font-weight: normal;
+  padding: 0.1em;
+  margin-top: 0em;
+}
+.block h3 {
+  font-size: 4em;
+  margin: 0;
+  font-weight: normal;
+}
+.block__menu-1 {
   width: 32em;
   height: 45em;
   display: flex;
@@ -60,78 +75,158 @@ a {
   align-items: center;
   margin: 2.5em;
   box-shadow: 0px 0px 20px #BDBDBD;
-}
-.menu-group h2 {
-  font-size: 3em;
-  font-weight: normal;
-  padding: 0.1em;
-  margin-top: 0em;
-}
-.menu-group h3 {
-  font-size: 4em;
-  margin: 0;
-  font-weight: normal;
-}
-
-.menu-1 {
   background-color: #FCDFDB;
   color: #3C1218;
 }
-.menu-1 i {
-  font-size: 5em;
-  background: linear-gradient(0.33turn, #ff3366, #f78f6a 80%);
-  -webkit-background-clip: text;
-  color: transparent;
+.block__menu-1 img {
+  width: 70px;
+  height: auto;
 }
-.menu-1 h2 {
+.block__menu-1 h2 {
   font-family: "Devonshire", cursive;
 }
-.menu-1 h3 {
+.block__menu-1 h3 {
   font-family: "Kalam", cursive;
   text-transform: uppercase;
 }
-
-.menu-2 {
+.block__menu-2 {
+  width: 32em;
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
   background-color: #FFF5FE;
   color: #C77412;
 }
-.menu-2 h2 {
+.block__menu-2 h2 {
   font-family: "Croissant One", cursive;
+  font-size: 2em;
   background: linear-gradient(0.4turn, #D8852E 25%, #905BFD);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 2em;
 }
-.menu-2 h3 {
+.block__menu-2 h3 {
   font-weight: 600;
 }
-
-.menu-3 {
-  color: #0887FB;
+.block__menu-3 {
+  width: 32em;
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
   background-color: #F9F9F9;
+  color: #0887FB;
 }
-.menu-3 h2 {
+.block__menu-3 h2 {
   font-family: "Dancing Script", cursive;
   background: linear-gradient(to right bottom, #0431df, #0887fb 80%);
   -webkit-background-clip: text;
   color: transparent;
 }
-.menu-3 h3 {
+.block__menu-3 h3 {
   font-family: "Shadows Into Light", cursive;
 }
-
-.menu-4 {
-  color: #72BF56;
+.block__menu-4 {
+  width: 32em;
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
   background-color: #FDFFFD;
+  color: #72BF56;
 }
-.menu-4 h2 {
+.block__menu-4 h2 {
   font-family: "Kaushan Script", cursive;
   background: linear-gradient(to right bottom, #3d9339, #bfff7e 70%);
   -webkit-background-clip: text;
   color: transparent;
 }
-.menu-4 h3 {
+.block__menu-4 h3 {
   font-family: "Shadows Into Light", cursive;
+}
+
+/* menu 1 */
+.menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto 8em auto;
+}
+
+.title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.menu-1 {
+  background: #FCDFDB;
+  box-shadow: 0px 0px 20px #BDBDBD;
+  padding: 5em;
+}
+.menu-1__header {
+  text-align: center;
+  font-size: 2.8em;
+  padding: 1em;
+  font-family: "Devonshire", cursive;
+}
+.menu-1__header h2 {
+  font-weight: normal;
+  margin: 0;
+}
+.menu-1__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Kalam", cursive;
+}
+.menu-1__title h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.5em;
+}
+.menu-1__content {
+  font-family: "Kalam", cursive;
+  padding-bottom: 2em;
+}
+.menu-1__content ul {
+  list-style-type: none;
+  font-weight: lighter;
+  font-size: 1.5em;
+  line-height: 2.5;
+  padding: 0;
+  margin: 0;
+}
+.menu-1__content ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-1__content ul span {
+  font-weight: normal;
+}
+.menu-1__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: normal;
+  font-family: "Devonshire", cursive;
+}
+.menu-1__bottom__note {
+  width: 50px;
+  height: auto;
+  padding-right: 0.5em;
 }
 
 /* bouton */
@@ -181,8 +276,8 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
   color: #FDCB46;
-  padding: 0.5em 1em;
+  padding: 0.8em 0.5em;
   margin: 0em;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

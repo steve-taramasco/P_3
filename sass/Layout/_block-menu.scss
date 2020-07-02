@@ -1,0 +1,101 @@
+/* menu-group */
+
+.block {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1190px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & h2 {
+        font-size: 3em;
+        font-weight: normal;
+        padding: 0.1em;
+        margin-top: 0em;
+    }
+
+    & h3 {
+        font-size: 4em;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    &__menu-1 {
+
+        @include menu-prev;
+        background-color: $background_1;
+        color: $colour_1;
+
+        & img { 
+            width: 70px;
+            height: auto;
+        } 
+
+        & h2 {
+            font-family: $font_1-h2;
+        }
+
+        & h3 {
+            font-family: 'Kalam', cursive;
+            text-transform: uppercase;
+        }
+    }
+
+    &__menu-2 {
+
+        @include menu-prev;
+        background-color: $background_2;
+        color: $colour_2;
+
+        & h2 {
+            font-family: $font_2-h2;
+            font-size: 2em;
+            background: linear-gradient(0.4turn, #D8852E 25%, #905BFD);
+            -webkit-background-clip: text;
+            color: transparent;
+            
+        }
+
+        & h3 {
+            font-weight: 600;
+        }
+    }
+
+    &__menu-3 {
+
+        @include menu-prev;
+        background-color: $background_3;
+        color: $colour_3;
+        
+        & h2 {
+            font-family: $font_3-h2;
+            background: linear-gradient(to right bottom, #0431df, #0887fb 80%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        & h3 {
+            font-family: $font_3-h3;
+        }
+    }
+
+    &__menu-4 {
+
+        @include menu-prev;
+        background-color: $background_4;
+        color: $colour_4;
+
+        & h2 {
+            font-family: $font_4-h2;
+            background: linear-gradient(to right bottom, #3d9339, #bfff7e 70%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        & h3 {
+            font-family: $font_4-h3;
+        }
+    }
+} 
