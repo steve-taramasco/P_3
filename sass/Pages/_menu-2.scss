@@ -1,0 +1,49 @@
+/* menu 2 */
+
+.menu-2 {
+    background: $chic_background;
+    padding: 0 2em 11em 2em;
+
+    &__header {
+        font-family: $chic_h2;
+        font-size: 2.2em;
+        padding: 3.6em 0;
+        @include chic;
+    }
+
+    &__title {
+        letter-spacing: .07em;
+        font-size: 1.5em;
+    }
+
+    &__content {
+        font-size: 1.55em;
+        width: 76%;
+        margin: auto;
+
+        & ul {
+            padding-bottom: 2em;
+
+            & li {
+                padding: 0.6em 0;
+
+                & .price {
+                    padding-left: .03em;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+.color_1 {
+    color: #C67412;
+}
+
+.color_2 {
+    color: #a56799;
+}
+
+.color_3 {
+    color: #6e4ccc;
+}

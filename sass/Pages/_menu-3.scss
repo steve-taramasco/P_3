@@ -1,0 +1,39 @@
+/* menu 3 */
+
+.menu-3 {
+    background: $delice_background;
+    font-family: $delice_h3;
+    padding: 0 2em 15em 2em;
+
+    &__header {
+        font-family: $delice_h2;
+        font-size: 4em;
+        padding: 1.7em 0;
+        @include delice;
+    }
+
+    &__title h3 {
+        font-size: 1.8em;
+        font-weight: lighter;
+        letter-spacing: .05em;
+    }
+
+    &__content {
+        font-size: 1.5em;
+        width: 76%;
+        margin: auto;
+
+        & ul {
+            padding-bottom: 1em;
+
+            & li {
+                padding: 0.3em 0;
+            }
+
+            & .price {
+                font-size: 1.2em;
+                font-weight: lighter;
+            }
+        }
+    }
+}

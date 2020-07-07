@@ -5,22 +5,7 @@
 /* menu 4 */
 /* mixins */
 body {
-  margin: auto;
-}
-@media screen and (max-width: 1190px) {
-  body {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 700px) {
-  body {
-    font-size: 0.7em;
-  }
-}
-@media screen and (max-width: 380px) {
-  body {
-    font-size: 0.5em;
-  }
+  margin: 0;
 }
 
 a {
@@ -29,204 +14,71 @@ a {
   color: inherit;
 }
 
-/* header */
-.header {
-  background-color: #579C87;
-  margin-bottom: 2.5em;
+main {
+  max-width: 1024px;
+  margin: auto;
 }
-.header__logo {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: -4px;
-  font-size: 5em;
-  padding: 0.5em;
-  margin: 0;
+
+.menu_name {
   text-align: center;
-  color: #FDCB46;
-}
-
-/* menu-group */
-.block {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 1190px) {
-  .block {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.block h2 {
-  font-size: 3em;
-  font-weight: normal;
-  padding: 0.1em;
-  margin-top: 0em;
-}
-.block h3 {
-  font-size: 4em;
-  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
   font-weight: normal;
 }
-.block__menu-1 {
-  width: 32em;
-  height: 45em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
-  background-color: #FCDFDB;
-  color: #3C1218;
-}
-.block__menu-1 img {
-  width: 70px;
-  height: auto;
-}
-.block__menu-1 h2 {
-  font-family: "Devonshire", cursive;
-}
-.block__menu-1 h3 {
-  font-family: "Kalam", cursive;
-  text-transform: uppercase;
-}
-.block__menu-2 {
-  width: 32em;
-  height: 45em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
-  background-color: #FFF5FE;
-  color: #C77412;
-}
-.block__menu-2 h2 {
-  font-family: "Croissant One", cursive;
-  font-size: 2em;
-  background: linear-gradient(0.4turn, #D8852E 25%, #905BFD);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.block__menu-2 h3 {
-  font-weight: 600;
-}
-.block__menu-3 {
-  width: 32em;
-  height: 45em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
-  background-color: #F9F9F9;
-  color: #0887FB;
-}
-.block__menu-3 h2 {
-  font-family: "Dancing Script", cursive;
-  background: linear-gradient(to right bottom, #0431df, #0887fb 80%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.block__menu-3 h3 {
-  font-family: "Shadows Into Light", cursive;
-}
-.block__menu-4 {
-  width: 32em;
-  height: 45em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
-  background-color: #FDFFFD;
-  color: #72BF56;
-}
-.block__menu-4 h2 {
-  font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right bottom, #3d9339, #bfff7e 70%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.block__menu-4 h3 {
-  font-family: "Shadows Into Light", cursive;
-}
 
-/* menu 1 */
 .menu {
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto 8em auto;
-}
-
-.title {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2em;
-  font-weight: normal;
-}
-
-.menu-1 {
-  background: #FCDFDB;
   box-shadow: 0px 0px 20px #BDBDBD;
-  padding: 5em;
+  margin-bottom: 8em;
 }
-.menu-1__header {
+.menu__header {
+  display: flex;
+  align-items: center;
   text-align: center;
-  font-size: 2.8em;
-  padding: 1em;
-  font-family: "Devonshire", cursive;
+  justify-content: center;
 }
-.menu-1__header h2 {
+.menu__header h2 {
   font-weight: normal;
   margin: 0;
 }
-.menu-1__title {
+.menu__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Kalam", cursive;
 }
-.menu-1__title h2 {
+.menu__title__left, .menu__title__right {
+  width: 30%;
+}
+.menu__title h3 {
   text-align: center;
-  font-weight: normal;
-  font-size: 2.5em;
 }
-.menu-1__content {
-  font-family: "Kalam", cursive;
-  padding-bottom: 2em;
-}
-.menu-1__content ul {
+.menu__content ul {
   list-style-type: none;
   font-weight: lighter;
-  font-size: 1.5em;
-  line-height: 2.5;
   padding: 0;
   margin: 0;
 }
-.menu-1__content ul li {
+.menu__content ul li {
   display: flex;
   justify-content: space-between;
+  padding: 0.5em 0;
 }
-.menu-1__content ul span {
+.menu__content ul span {
   font-weight: normal;
+  padding-left: 1em;
 }
-.menu-1__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* header */
+.header {
+  background-color: #579C87;
+}
+.header__logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  padding: 0.6em;
+  margin: 0;
+  margin-bottom: 0.7em;
   text-align: center;
-  font-size: 2.2em;
-  font-weight: normal;
-  font-family: "Devonshire", cursive;
-}
-.menu-1__bottom__note {
-  width: 50px;
-  height: auto;
-  padding-right: 0.5em;
+  color: #FDCB46;
 }
 
 /* bouton */
@@ -239,25 +91,11 @@ a {
   font-family: "Montserrat", sans-serif;
   background-color: #579C87;
   color: #FDCB46;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: normal;
   border-radius: 0.4em;
-  padding: 0.3em 1.3em;
-}
-@media screen and (max-width: 1190px) {
-  .btn__title {
-    padding: 0.5em;
-  }
-}
-@media screen and (max-width: 700px) {
-  .btn__title {
-    padding: 0.5em;
-  }
-}
-@media screen and (max-width: 380px) {
-  .btn__title {
-    padding: 0.5em;
-  }
+  padding: 0.4em 1.5em;
+  margin-block-start: 0.5em;
 }
 
 /* footer */
@@ -265,8 +103,10 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: #579C87;
+  position: sticky;
+  bottom: 0;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 475px) {
   .footer {
     flex-direction: column;
     align-items: center;
@@ -274,10 +114,292 @@ a {
 }
 .footer__legal, .footer__contact {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5em;
+  font-size: 1.6em;
   color: #FDCB46;
-  padding: 0.8em 0.5em;
+  padding: 1em;
   margin: 0em;
+}
+
+/* home */
+.block {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1023px) {
+  .block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.block h2 {
+  font-size: 2em;
+  font-weight: normal;
+  padding: 0.1em;
+  margin-top: 0em;
+}
+.block h3 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: normal;
+}
+.block__menu-1 {
+  width: 20em;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
+  background-color: #FCDFDB;
+  color: #3C1218;
+}
+.block__menu-1__note {
+  background: linear-gradient(0.33turn, #ef475f, #f6916a 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.block__menu-1 h2 {
+  font-family: "Devonshire", cursive;
+}
+.block__menu-1 h3 {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+}
+.block__menu-2 {
+  width: 20em;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
+  background-color: #FFF5FE;
+  color: #C67412;
+}
+.block__menu-2 h2 {
+  background: linear-gradient(0.4turn, #D8852E 30%, #905BFD 65%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Croissant One", cursive;
+  font-size: 1.4em;
+}
+.block__menu-2 h3 {
+  font-weight: 600;
+}
+.block__menu-3 {
+  width: 20em;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
+  background-color: #F9F9F9;
+  color: #0887FB;
+}
+.block__menu-3 h2 {
+  background: linear-gradient(to right bottom, #0431df 40%, #0887fb 60%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Dancing Script", cursive;
+}
+.block__menu-3 h3 {
+  font-family: "Kalam", cursive;
+}
+.block__menu-4 {
+  width: 20em;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em;
+  box-shadow: 0px 0px 20px #BDBDBD;
+  background-color: #FDFFFD;
+  color: #72BF56;
+}
+.block__menu-4 h2 {
+  background: linear-gradient(to right bottom, #3d923a 30%, #bfff7e 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+.block__menu-4 h3 {
+  font-family: "Kalam", cursive;
+}
+
+/* menu 1 */
+.menu-1 {
+  background: #FCDFDB;
+  padding: 0 5em 1em 5em;
+}
+.menu-1__header {
+  font-family: "Devonshire", cursive;
+  flex-direction: column;
+  font-size: 2.5em;
+  padding: 1.5em 0 0.5em 0;
+}
+.menu-1__header__note {
+  background: linear-gradient(0.33turn, #ef475f, #f6916a 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu-1__title {
+  font-family: "Kalam", cursive;
+  letter-spacing: 0.08em;
+}
+.menu-1__title h3 {
+  font-weight: normal;
+  margin: 0.5em 0;
+  font-size: 2em;
+}
+.menu-1__content {
+  font-family: "Kalam", cursive;
+  font-size: 1.5em;
+  letter-spacing: 0.04em;
+  padding: 0 0 2em 0;
+}
+.menu-1__content ul li {
+  padding: 0.4em 0;
+}
+.menu-1__content ul li .price {
+  font-size: 1.1em;
+}
+.menu-1__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Devonshire", cursive;
+}
+.menu-1__bottom__note {
+  background: linear-gradient(0.33turn, #ef475f, #f6916a 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-right: 0.3em;
+}
+
+/* menu 2 */
+.menu-2 {
+  background: #FFF5FE;
+  padding: 0 2em 11em 2em;
+}
+.menu-2__header {
+  font-family: "Croissant One", cursive;
+  font-size: 2.2em;
+  padding: 3.6em 0;
+  background: linear-gradient(0.4turn, #D8852E 30%, #905BFD 65%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu-2__title {
+  letter-spacing: 0.07em;
+  font-size: 1.5em;
+}
+.menu-2__content {
+  font-size: 1.55em;
+  width: 76%;
+  margin: auto;
+}
+.menu-2__content ul {
+  padding-bottom: 2em;
+}
+.menu-2__content ul li {
+  padding: 0.6em 0;
+}
+.menu-2__content ul li .price {
+  padding-left: 0.03em;
+  font-size: 1.1em;
+}
+
+.color_1 {
+  color: #C67412;
+}
+
+.color_2 {
+  color: #a56799;
+}
+
+.color_3 {
+  color: #6e4ccc;
+}
+
+/* menu 3 */
+.menu-3 {
+  background: #F9F9F9;
+  font-family: "Kalam", cursive;
+  padding: 0 2em 15em 2em;
+}
+.menu-3__header {
+  font-family: "Dancing Script", cursive;
+  font-size: 4em;
+  padding: 1.7em 0;
+  background: linear-gradient(to right bottom, #0431df 40%, #0887fb 60%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu-3__title h3 {
+  font-size: 1.8em;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+}
+.menu-3__content {
+  font-size: 1.5em;
+  width: 76%;
+  margin: auto;
+}
+.menu-3__content ul {
+  padding-bottom: 1em;
+}
+.menu-3__content ul li {
+  padding: 0.3em 0;
+}
+.menu-3__content ul .price {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+/* menu 4 */
+.menu-4 {
+  background: #FDFFFD;
+  padding: 0 2.5em 15em 2.5em;
+}
+.menu-4__header {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3.8em;
+  padding: 1.5em 0;
+  background: linear-gradient(to right bottom, #3d923a 30%, #bfff7e 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.menu-4__title {
+  font-family: "Kalam", cursive;
+  font-size: 1.5em;
+}
+.menu-4__title h3 {
+  font-weight: lighter;
+}
+.menu-4__title__left, .menu-4__title__right {
+  width: 37%;
+}
+.menu-4__content {
+  font-family: "Kalam", cursive;
+  font-size: 1.5em;
+}
+.menu-4__content ul {
+  margin: 0 3.5em;
+  padding-bottom: 1em;
+}
+.menu-4__content ul li {
+  padding: 0.2em 0;
+}
+.menu-4__content ul li .price {
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=styles.css.map */

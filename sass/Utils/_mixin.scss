@@ -1,20 +1,42 @@
 /* mixins */
 
 @mixin link-styles {
-
     text-decoration: none;
     text-align: center;
     color: inherit;
 }
 
 @mixin menu-prev {
-
-    width: 32em;
-    height: 45em;
+    width: 20em;
+    height: 28em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2.5em;
     box-shadow: 0px 0px 20px #BDBDBD;
+}
+
+@mixin note {
+    background: linear-gradient(0.33turn, #ef475f, #f6916a 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin chic {
+    background: linear-gradient(0.4turn, #D8852E 30%, #905BFD 65%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin delice {
+    background: linear-gradient(to right bottom, #0431df 40%, #0887fb 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin palette {
+    background: linear-gradient(to right bottom, #3d923a 30%, #bfff7e 70%);
+    -webkit-background-clip: text;
+    color: transparent;
 }

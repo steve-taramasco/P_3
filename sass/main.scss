@@ -1,8 +1,13 @@
 @import "./utils/variables";
 @import "./Utils/mixin";
-@import "./Base/body";
+@import "./Base/base";
 @import "./Layout/header";
-@import "./Layout/block-menu";
-@import "./Layout/menu-1";
 @import "./Composants/btn";
 @import "./Layout/footer";
+@import "./Pages/home"; 
+@import "./Pages/menu-1";
+@import "./Pages/menu-2";
+@import "./Pages/menu-3";
+@import "./Pages/menu-4";
+
+

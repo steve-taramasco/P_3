@@ -4,8 +4,10 @@
     display: flex;
     justify-content: space-between;
     background-color: $primary-colour;
+    position: sticky;
+    bottom: 0;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 475px) {
         flex-direction: column;
         align-items: center;
     }
@@ -13,9 +15,9 @@
     &__legal,
     &__contact {
         font-family: $title-font;
-        font-size: 2.5em;
+        font-size: 1.6em;
         color: $secondary-colour;
-        padding: .8em .5em;
+        padding: 1em;
         margin: 0em;
     }
 }

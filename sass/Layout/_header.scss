@@ -1,14 +1,13 @@
 /* header */
 .header {
     background-color: $primary-colour;
-    margin-bottom: 2.5em;
 
     &__logo {
         font-family: $title-font;
-        letter-spacing: -4px;
-        font-size: 5em;
-        padding: .5em;
+        font-size: 4em;
+        padding: .6em;
         margin: 0;
+        margin-bottom: .7em;
         text-align: center;
         color: $secondary-colour;
     }
