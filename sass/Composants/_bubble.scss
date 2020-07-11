@@ -1,18 +1,26 @@
-/* bouton */
+/* bulle */
 
-.btn {
+.soon {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &__title {
+    &__bubble {
         font-family: $title-font;
         background-color: $primary-colour;
         color: $secondary-colour;
-        font-size: 2em;
+        font-size: 2.3em;
         font-weight: normal;
         border-radius: .4em;
-        padding: 0.4em 1.5em;
+        padding: 0.5em 1.5em;
         margin-block-start: .5em;
+
+        &__dot-1 {
+            
+        }
+
+        @media screen and (max-width: 1023px) {
+            padding: .3em .5em;
+        }
     }
 }

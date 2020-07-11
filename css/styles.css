@@ -7,6 +7,16 @@
 body {
   margin: 0;
 }
+@media screen and (max-width: 424px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 696px) {
+  body {
+    font-size: 0.9em;
+  }
+}
 
 a {
   text-decoration: none;
@@ -27,8 +37,9 @@ main {
 }
 
 .menu {
-  box-shadow: 0px 0px 20px #BDBDBD;
-  margin-bottom: 8em;
+  box-shadow: 0px 0px 20px #cfcfcf;
+  margin: 0 auto 6em auto;
+  max-width: 832px;
 }
 .menu__header {
   display: flex;
@@ -38,6 +49,7 @@ main {
 }
 .menu__header h2 {
   font-weight: normal;
+  padding: 0.1em;
   margin: 0;
 }
 .menu__title {
@@ -51,6 +63,18 @@ main {
 .menu__title h3 {
   text-align: center;
 }
+.menu__title h3:hover::after {
+  transform: scale(1);
+}
+.menu__title ::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: black;
+  transform-origin: left;
+  transform: scalex(0);
+  transition: transform 1000ms ease;
+}
 .menu__content ul {
   list-style-type: none;
   font-weight: lighter;
@@ -62,9 +86,20 @@ main {
   justify-content: space-between;
   padding: 0.5em 0;
 }
+@media screen and (max-width: 620px) {
+  .menu__content ul li {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .menu__content ul span {
   font-weight: normal;
   padding-left: 1em;
+}
+@media screen and (max-width: 620px) {
+  .menu__content ul span {
+    padding: 0.5em;
+  }
 }
 
 /* header */
@@ -74,28 +109,34 @@ main {
 .header__logo {
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
-  padding: 0.6em;
+  letter-spacing: -0.05em;
+  padding: 0.7em;
   margin: 0;
   margin-bottom: 0.7em;
   text-align: center;
   color: #FDCB46;
 }
 
-/* bouton */
-.btn {
+/* bulle */
+.soon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn__title {
+.soon__bubble {
   font-family: "Montserrat", sans-serif;
   background-color: #579C87;
   color: #FDCB46;
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: normal;
   border-radius: 0.4em;
-  padding: 0.4em 1.5em;
+  padding: 0.5em 1.5em;
   margin-block-start: 0.5em;
+}
+@media screen and (max-width: 1023px) {
+  .soon__bubble {
+    padding: 0.3em 0.5em;
+  }
 }
 
 /* footer */
@@ -106,7 +147,7 @@ main {
   position: sticky;
   bottom: 0;
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 767px) {
   .footer {
     flex-direction: column;
     align-items: center;
@@ -114,10 +155,16 @@ main {
 }
 .footer__legal, .footer__contact {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6em;
+  font-size: 2em;
+  font-weight: 500;
   color: #FDCB46;
-  padding: 1em;
+  padding: 0.8em;
   margin: 0em;
+}
+@media screen and (max-width: 767px) {
+  .footer__legal, .footer__contact {
+    padding: 0.3em;
+  }
 }
 
 /* home */
@@ -131,26 +178,35 @@ main {
     align-items: center;
   }
 }
+.block__zoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: all 1000ms;
+}
+.block__zoom:hover {
+  transform: scale(1.15);
+  opacity: 0.6;
+}
 .block h2 {
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: normal;
   padding: 0.1em;
   margin-top: 0em;
 }
 .block h3 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   margin: 0;
   font-weight: normal;
 }
 .block__menu-1 {
-  width: 20em;
-  height: 28em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 23em;
+  height: 32em;
   margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #cfcfcf;
   background-color: #FCDFDB;
   color: #3C1218;
 }
@@ -167,14 +223,11 @@ main {
   text-transform: uppercase;
 }
 .block__menu-2 {
-  width: 20em;
-  height: 28em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 23em;
+  height: 32em;
   margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #cfcfcf;
   background-color: #FFF5FE;
   color: #C67412;
 }
@@ -183,20 +236,17 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Croissant One", cursive;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 .block__menu-2 h3 {
   font-weight: 600;
 }
 .block__menu-3 {
-  width: 20em;
-  height: 28em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 23em;
+  height: 32em;
   margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #cfcfcf;
   background-color: #F9F9F9;
   color: #0887FB;
 }
@@ -210,14 +260,11 @@ main {
   font-family: "Kalam", cursive;
 }
 .block__menu-4 {
-  width: 20em;
-  height: 28em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 23em;
+  height: 32em;
   margin: 2.5em;
-  box-shadow: 0px 0px 20px #BDBDBD;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #cfcfcf;
   background-color: #FDFFFD;
   color: #72BF56;
 }
@@ -234,13 +281,18 @@ main {
 /* menu 1 */
 .menu-1 {
   background: #FCDFDB;
-  padding: 0 5em 1em 5em;
+  padding: 0 6em 1em 6em;
+}
+@media screen and (max-width: 840px) {
+  .menu-1 {
+    padding: 0 2em 1em 2em;
+  }
 }
 .menu-1__header {
   font-family: "Devonshire", cursive;
   flex-direction: column;
-  font-size: 2.5em;
-  padding: 1.5em 0 0.5em 0;
+  font-size: 2.3em;
+  padding: 1em 0 0.5em 0;
 }
 .menu-1__header__note {
   background: linear-gradient(0.33turn, #ef475f, #f6916a 80%);
@@ -249,21 +301,19 @@ main {
 }
 .menu-1__title {
   font-family: "Kalam", cursive;
-  letter-spacing: 0.08em;
 }
 .menu-1__title h3 {
   font-weight: normal;
   margin: 0.5em 0;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .menu-1__content {
   font-family: "Kalam", cursive;
-  font-size: 1.5em;
-  letter-spacing: 0.04em;
+  font-size: 1.3em;
   padding: 0 0 2em 0;
 }
 .menu-1__content ul li {
-  padding: 0.4em 0;
+  padding: 0.2em 0;
 }
 .menu-1__content ul li .price {
   font-size: 1.1em;
@@ -273,7 +323,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "Devonshire", cursive;
 }
 .menu-1__bottom__note {
@@ -286,24 +336,28 @@ main {
 /* menu 2 */
 .menu-2 {
   background: #FFF5FE;
-  padding: 0 2em 11em 2em;
+  padding: 0 2em 9em 2em;
 }
 .menu-2__header {
   font-family: "Croissant One", cursive;
-  font-size: 2.2em;
+  font-size: 1.7em;
   padding: 3.6em 0;
   background: linear-gradient(0.4turn, #D8852E 30%, #905BFD 65%);
   -webkit-background-clip: text;
   color: transparent;
 }
 .menu-2__title {
-  letter-spacing: 0.07em;
-  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  font-size: 1.2em;
 }
 .menu-2__content {
-  font-size: 1.55em;
-  width: 76%;
-  margin: auto;
+  font-size: 1.25em;
+  margin: 0 3.5em;
+}
+@media screen and (max-width: 840px) {
+  .menu-2__content {
+    margin: 0;
+  }
 }
 .menu-2__content ul {
   padding-bottom: 2em;
@@ -332,25 +386,29 @@ main {
 .menu-3 {
   background: #F9F9F9;
   font-family: "Kalam", cursive;
-  padding: 0 2em 15em 2em;
+  padding: 0 2em 10em 2em;
 }
 .menu-3__header {
   font-family: "Dancing Script", cursive;
-  font-size: 4em;
-  padding: 1.7em 0;
+  font-size: 3em;
+  padding: 1.8em 0;
   background: linear-gradient(to right bottom, #0431df 40%, #0887fb 60%);
   -webkit-background-clip: text;
   color: transparent;
 }
 .menu-3__title h3 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: lighter;
   letter-spacing: 0.05em;
 }
 .menu-3__content {
-  font-size: 1.5em;
-  width: 76%;
-  margin: auto;
+  font-size: 1.2em;
+  margin: 0 3.5em;
+}
+@media screen and (max-width: 840px) {
+  .menu-3__content {
+    margin: 0;
+  }
 }
 .menu-3__content ul {
   padding-bottom: 1em;
@@ -366,11 +424,11 @@ main {
 /* menu 4 */
 .menu-4 {
   background: #FDFFFD;
-  padding: 0 2.5em 15em 2.5em;
+  padding: 0 2em 11em 2em;
 }
 .menu-4__header {
   font-family: "Kaushan Script", cursive;
-  font-size: 3.8em;
+  font-size: 3.2em;
   padding: 1.5em 0;
   background: linear-gradient(to right bottom, #3d923a 30%, #bfff7e 70%);
   -webkit-background-clip: text;
@@ -378,21 +436,26 @@ main {
 }
 .menu-4__title {
   font-family: "Kalam", cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .menu-4__title h3 {
   font-weight: lighter;
 }
 .menu-4__title__left, .menu-4__title__right {
-  width: 37%;
+  width: 35%;
 }
 .menu-4__content {
   font-family: "Kalam", cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin: 0 3.5em;
+}
+@media screen and (max-width: 840px) {
+  .menu-4__content {
+    margin: 0;
+  }
 }
 .menu-4__content ul {
-  margin: 0 3.5em;
-  padding-bottom: 1em;
+  padding-bottom: 1.1em;
 }
 .menu-4__content ul li {
   padding: 0.2em 0;
@@ -400,6 +463,17 @@ main {
 .menu-4__content ul li .price {
   font-size: 1.2em;
   font-weight: lighter;
+}
+
+.mention {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 3em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+.mention h2, .mention h3 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

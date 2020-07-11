@@ -1,0 +1,14 @@
+.mention {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3em;
+    font-family: $title-font;
+    font-size: 1.2em;
+    
+    & h2,
+    & h3 {
+        text-align: center;
+    }
+}
+
+

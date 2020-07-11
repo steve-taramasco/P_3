@@ -1,5 +1,28 @@
 /* mixins */
 
+
+@mixin line-style ($background-color:black) {
+    height: 4px;
+    background-color: $background-color;
+    transform-origin: left;
+    transform: scalex(0);
+    transition: transform 1000ms ease;
+}
+
+@mixin zoom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transition: all 1000ms;
+
+    &:hover {
+        transform: scale(1.15);
+        opacity: .6;
+    }
+}
+
 @mixin link-styles {
     text-decoration: none;
     text-align: center;
@@ -7,14 +30,11 @@
 }
 
 @mixin menu-prev {
-    width: 20em;
-    height: 28em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 23em;
+    height: 32em;
     margin: 2.5em;
-    box-shadow: 0px 0px 20px #BDBDBD;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #cfcfcf;
 }
 
 @mixin note {

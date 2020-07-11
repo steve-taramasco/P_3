@@ -1,5 +1,13 @@
 body {
     margin: 0;
+
+    @media screen and (max-width: 424px) {
+        font-size: .8em;
+    }
+
+    @media screen and (min-width: 425px) and (max-width: 696px) {
+        font-size: .9em;
+    }
 }
 
 a {
@@ -19,8 +27,9 @@ main {
 }
 
 .menu {
-    box-shadow: 0px 0px 20px #BDBDBD;
-    margin-bottom: 8em;
+    box-shadow: 0px 0px 20px #cfcfcf;
+    margin: 0 auto 6em auto;
+    max-width: 832px;
 
     &__header {
         display: flex;
@@ -30,6 +39,7 @@ main {
 
         & h2 {
             font-weight: normal;
+            padding: .1em;
             margin: 0;
         }
     }
@@ -46,6 +56,17 @@ main {
 
         & h3 {
             text-align: center;
+            &:hover {
+                &::after {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        & ::after {
+            content:"";
+            display: block;
+            @include line-style;
         }
     }
 
@@ -59,11 +80,20 @@ main {
             display: flex;
             justify-content: space-between;
             padding: .5em 0;
+
+            @media screen and (max-width: 620px) {
+                flex-direction: column;
+                text-align: center;
+            }
         }
 
         & span {
             font-weight: normal;
             padding-left: 1em;
+
+            @media screen and (max-width: 620px) {
+                padding: .5em;
+            }
         }
     }
 }

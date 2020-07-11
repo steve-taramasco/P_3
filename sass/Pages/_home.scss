@@ -1,5 +1,6 @@
 /* home */
 
+
 .block {
     display: flex;
     justify-content: center;
@@ -9,15 +10,19 @@
         align-items: center;
     }
 
+    &__zoom {
+        @include zoom;
+    }
+
     & h2 {
-        font-size: 2em;
+        font-size: 2.2em;
         font-weight: normal;
         padding: 0.1em;
         margin-top: 0em;
     }
 
     & h3 {
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin: 0;
         font-weight: normal;
     }
@@ -27,7 +32,7 @@
         background-color: $note_background;
         color: $note_color;
 
-        &__note { 
+        &__note {
             @include note;
         }
 
@@ -48,8 +53,8 @@
 
         & h2 {
             @include chic;
-            font-family: $chic_h2; 
-            font-size: 1.4em;
+            font-family: $chic_h2;
+            font-size: 1.5em;
         }
 
         & h3 {
