@@ -1,0 +1,24 @@
+@keyframes wiggle {
+
+    1%,3%,5% {
+        transform: translateX(2%);
+    }
+
+    2%,4%,6% {
+        transform: translateX(-2%);
+    }
+    7% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes dot {
+
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-10%);
+    }
+}

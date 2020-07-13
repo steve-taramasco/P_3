@@ -17,8 +17,7 @@
     & h2 {
         font-size: 2.2em;
         font-weight: normal;
-        padding: 0.1em;
-        margin-top: 0em;
+        margin-top: 0;
     }
 
     & h3 {
@@ -91,4 +90,23 @@
             font-family: $palette_h3;
         }
     }
+}
+
+.soon {
+    &__bubble {
+        &__dot-1 {
+            display: inline-block;
+            animation: dot 500ms 500ms infinite alternate;
+        }
+        &__dot-2 {
+            display: inline-block;
+            animation: dot 500ms 600ms infinite alternate;
+        }
+
+        &__dot-3 {
+            display: inline-block;
+            animation: dot 500ms 700ms infinite alternate;
+        }
+    }
+
 }

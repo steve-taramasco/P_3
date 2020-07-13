@@ -25,4 +25,12 @@
             padding: .3em;
         }
     }
+
+    &__legal {
+        animation: wiggle 4000ms 2000ms infinite;
+    }
+
+    &__contact {
+        animation: wiggle 4000ms 3000ms infinite;
+    }
 }

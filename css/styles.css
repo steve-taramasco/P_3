@@ -4,6 +4,25 @@
 /* menu 3 */
 /* menu 4 */
 /* mixins */
+@keyframes wiggle {
+  1%, 3%, 5% {
+    transform: translateX(2%);
+  }
+  2%, 4%, 6% {
+    transform: translateX(-2%);
+  }
+  7% {
+    transform: translateX(0%);
+  }
+}
+@keyframes dot {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
 body {
   margin: 0;
 }
@@ -166,6 +185,12 @@ main {
     padding: 0.3em;
   }
 }
+.footer__legal {
+  animation: wiggle 4000ms 2000ms infinite;
+}
+.footer__contact {
+  animation: wiggle 4000ms 3000ms infinite;
+}
 
 /* home */
 .block {
@@ -182,9 +207,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  width: 100%;
-  transition: all 1000ms;
+  height: inherit;
+  width: inherit;
+  transition: all 300ms;
 }
 .block__zoom:hover {
   transform: scale(1.15);
@@ -193,8 +218,7 @@ main {
 .block h2 {
   font-size: 2.2em;
   font-weight: normal;
-  padding: 0.1em;
-  margin-top: 0em;
+  margin-top: 0;
 }
 .block h3 {
   font-size: 2.8em;
@@ -276,6 +300,19 @@ main {
 }
 .block__menu-4 h3 {
   font-family: "Kalam", cursive;
+}
+
+.soon__bubble__dot-1 {
+  display: inline-block;
+  animation: dot 500ms 500ms infinite alternate;
+}
+.soon__bubble__dot-2 {
+  display: inline-block;
+  animation: dot 500ms 600ms infinite alternate;
+}
+.soon__bubble__dot-3 {
+  display: inline-block;
+  animation: dot 500ms 700ms infinite alternate;
 }
 
 /* menu 1 */
