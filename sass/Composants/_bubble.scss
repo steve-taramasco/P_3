@@ -16,7 +16,18 @@
         margin-block-start: .5em;
 
         &__dot-1 {
-            
+            display: inline-block;
+            animation: dot 500ms 100ms infinite alternate;
+        }
+
+        &__dot-2 {
+            display: inline-block;
+            animation: dot 500ms 200ms infinite alternate;
+        }
+
+        &__dot-3 {
+            display: inline-block;
+            animation: dot 500ms 300ms infinite alternate;
         }
 
         @media screen and (max-width: 1023px) {

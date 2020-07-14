@@ -91,22 +91,3 @@
         }
     }
 }
-
-.soon {
-    &__bubble {
-        &__dot-1 {
-            display: inline-block;
-            animation: dot 500ms 500ms infinite alternate;
-        }
-        &__dot-2 {
-            display: inline-block;
-            animation: dot 500ms 600ms infinite alternate;
-        }
-
-        &__dot-3 {
-            display: inline-block;
-            animation: dot 500ms 700ms infinite alternate;
-        }
-    }
-
-}

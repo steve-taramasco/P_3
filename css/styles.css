@@ -4,12 +4,13 @@
 /* menu 3 */
 /* menu 4 */
 /* mixins */
+/* keyframes */
 @keyframes wiggle {
   1%, 3%, 5% {
-    transform: translateX(2%);
+    transform: translateX(1%);
   }
   2%, 4%, 6% {
-    transform: translateX(-2%);
+    transform: translateX(-1%);
   }
   7% {
     transform: translateX(0%);
@@ -20,7 +21,7 @@
     transform: translateY(0%);
   }
   to {
-    transform: translateY(-10%);
+    transform: translateY(-15%);
   }
 }
 body {
@@ -150,7 +151,19 @@ main {
   font-weight: normal;
   border-radius: 0.4em;
   padding: 0.5em 1.5em;
-  margin-bottom: 2em;
+  margin-block-start: 0.5em;
+}
+.soon__bubble__dot-1 {
+  display: inline-block;
+  animation: dot 500ms 100ms infinite alternate;
+}
+.soon__bubble__dot-2 {
+  display: inline-block;
+  animation: dot 500ms 200ms infinite alternate;
+}
+.soon__bubble__dot-3 {
+  display: inline-block;
+  animation: dot 500ms 300ms infinite alternate;
 }
 @media screen and (max-width: 1023px) {
   .soon__bubble {
@@ -300,19 +313,6 @@ main {
 }
 .block__menu-4 h3 {
   font-family: "Kalam", cursive;
-}
-
-.soon__bubble__dot-1 {
-  display: inline-block;
-  animation: dot 500ms 500ms infinite alternate;
-}
-.soon__bubble__dot-2 {
-  display: inline-block;
-  animation: dot 500ms 600ms infinite alternate;
-}
-.soon__bubble__dot-3 {
-  display: inline-block;
-  animation: dot 500ms 700ms infinite alternate;
 }
 
 /* menu 1 */
